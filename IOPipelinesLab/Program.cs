@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using BenchmarkDotNet.Running;
+using IOPipelinesLab.Benchmarks;
+
+Console.WriteLine("==========================================================");
+Console.WriteLine("🚀 LAB DE I/O PIPELINES");
+Console.WriteLine("==========================================================");
+
+BenchmarkRunner.Run<FileProcessorBenchmark>();
